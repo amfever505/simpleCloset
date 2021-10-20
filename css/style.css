@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&family=Shippori+Mincho:wght@400;600;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-size: 12px;
+}
+header {
+  @apply flex bg-black w-full fixed top-0 h-25 z-40 px-5 sm:px-9 items-center justify-between;
+}
+p {
+  @apply text-base;
+}
+span {
+  @apply text-sm;
+}
+h1 {
+  @apply text-4xl text-center mb-8 lg:mb-10;
+}
+h2 {
+  @apply text-xl text-center mb-6 lg:mb-8;
+}
+h2.page-ttl {
+  @apply mb-16;
+}
+#gnav ul li {
+  @apply text-center mb-10 md:mb-0 px-1 transition-all duration-300 hover:text-green-200;
+}
+#gnav ul li.now {
+  @apply border-b-2 border-green-200;
+}
+.nav-i-ttl {
+  @apply text-2xl md:text-base;
+}
+.nav-i-sbttl {
+  @apply text-xl md:text-sm;
+}
+.nav-wrapper {
+  @apply hidden w-full h-screen fixed top-0 left-0 z-50 md:block md:h-auto md:relative md:max-w-md md:w-6/12 lg:w-2/6 2xl:w-3/12;
+}
+.nav-wrapper-show {
+  @apply block !important;
+}
+.menu {
+  @apply block absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.mv-item {
+  @apply bg-no-repeat bg-center bg-cover pt-1/2img;
+}
+.img--3_4 {
+  @apply w-full pt-3/4img pt-80 bg-no-repeat bg-center bg-cover;
+}
+.img--7_15 {
+  @apply w-full pt-7/15 bg-no-repeat bg-contain bg-top;
+}
+.img--icon {
+  @apply w-full pt-1/1img bg-no-repeat bg-top bg-cover rounded-maru;
+}
+.gallery__item {
+  @apply min-w-1/2 md:min-w-1/3 transform  px-3 mb-14 opacity-50 hover:opacity-100 hover:rotate-6 transition-all duration-500 ease-in-out;
+}
+.card {
+  @apply w-full md:w-3/4 semi:w-2/5 2xl:w-1/2 max-w-7/15 m-auto rounded-3xl overflow-hidden mb-13 semi:mb-20;
+}
+.card-txt {
+  @apply w-full relative bg-white text-gray-700 pt-10 px-10 pb-35;
+}
+.event-date {
+  @apply text-red-400 text-lg;
+}
+/* access */
+.map {
+  @apply w-full semi:w-2/3 m-auto mx-8 mb-8 semi:mb-0;
+}
+.shop-name {
+  @apply px-4 pb-4 text-2xl border-b-0 border-green-200 align-middle transition-all duration-300 hover:text-green-200;
+}
+.shop-name.current {
+  @apply border-b-4;
+}
+.shop-li {
+  @apply w-1/2 bg-gray-700 semi:w-1/3 pb-8 z-20 absolute semi:static transition-all duration-300;
+}
+.shop-li > button {
+  @apply w-full semi:w-auto;
+}
+.shop-li.btn--up {
+  @apply z-30;
+}
+.shop-li-icon {
+  @apply mr-4 w-20 inline-block;
+}
+.select-btn {
+  @apply absolute semi:hidden z-40 inset-y-1/2 right-12;
+}
+.shop-li.drop {
+  @apply static;
+}
+.shop-info-li {
+  @apply relative mt-8;
+}
+.sns-icon {
+  @apply mx-4 w-16 inline-block;
+}
+.shop-info {
+  @apply absolute top-0 w-full flex opacity-0 transition-all duration-300  flex-col semi:flex-row items-center;
+}
+.shop-info.show {
+  @apply opacity-100;
+}
+.shop-info .info {
+  @apply w-2/3 semi:w-1/3 inline-block m-auto;
+}
+.info p {
+  @apply text-center semi:text-left text-xl mx-4 mb-8;
+}
+/* common */
+footer p {
+  @apply leading-footer text-sm;
+}
+section {
+  @apply m-auto w-full max-w-7xl;
+}
+section row .rowbox1-1_l,
+section row .rowbox1-1_r {
+  @apply w-full flex-col flex-1 mb-13 lg:mb-20;
+}
+section row .rowbox1-1_l {
+  @apply px-0 md:pl-20 lg:pl-24 2xl:pl-32;
+}
+section row .rowbox1-1_r {
+  @apply px-0 md:pr-20 lg:pr-24 2xl:pr-32;
+}
+.btn-lnk {
+  @apply bg-gray-800  text-white text-base lg:text-lg rounded-xl lg:rounded-3xl shadow  p-4 semi:p-5 items-center hover:bg-gray-900 transition-all duration-500;
+}
+.burger-btn {
+  @apply z-50  block relative;
+  width: 32px;
+  height: 24px;
+}
+.bar {
+  @apply w-full block absolute left-2/4 bg-white transition-all;
+  height: 1px;
+  transform: translateX(-50%);
+}
+.bar_top {
+  @apply top-0;
+}
+.bar_mid {
+  @apply top-2/4;
+  transform: translate(-50%, -50%);
+}
+.bar_bottom {
+  @apply bottom-0;
+}
+@media screen(sm) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen(md) {
+  html {
+    font-size: 15px;
+  }
+
+  .burger-btn {
+    @apply hidden;
+  }
+  .menu {
+    @apply flex relative text-center justify-between left-0 transform-none;
+  }
+}
+@media screen(lg) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen(xl) {
+  html {
+    font-size: 20px;
+  }
+}
+
+/* ----------------
+  common
+  home
+  mv
+  main
+------------------ */
+* {
+  box-sizing: border-box;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+body {
+  width: 100%;
+}
+
+span {
+  text-align: center;
+}
+a,
+ul,
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
+/* main#access .access::before {
+  content: '▼';
+  position: absolute;
+  top: 0;
+  right: 0;
+} */
+/* HOME */
+header {
+  box-shadow: 0px 4px 4px #333;
+}
+
+div#mv {
+  width: 100%;
+}
+
+.slide-arrow {
+  @apply block absolute w-8 h-8 mx-4 bg-gray-300 top-2/4 rounded-2xl opacity-50 hover:bg-white transition-all duration-500;
+  line-height: 32px;
+  z-index: 5;
+}
+.prev-arrow {
+  left: 0;
+}
+.next-arrow {
+  right: 0;
+}
+
+p.cap {
+  text-align: center;
+  margin: 20px 0 100px 0;
+}
+
+/* pick up */
+#pickup section {
+  @apply max-w-none;
+}
+.inner-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 84px 100px;
+}
+.inner-wrapper > img {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.product-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 48px;
+}
+
+.product-description > button {
+  width: 240px;
+  padding: 20px;
+  color: white;
+  background: #707070;
+  font-size: 20px;
+  border-radius: 20px;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* map */
+.gmap {
+  width: 100%;
+  height: 700px;
+}

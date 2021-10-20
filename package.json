@@ -1,0 +1,19 @@
+{
+  "name": "chongyue",
+  "version": "1.0.0",
+  "description": "chongyue cycling website",
+  "main": "index.js",
+  "repository": "https://github.com/amfever505/chongyue.git",
+  "author": "amfever505 <amfever505@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tailwind build css/style.css -o public/css/style.css",
+    "compile":"tailwindcss -i ./css/style.css -o ./dist/tailwind.css"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.5",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.4"
+  }
+}
