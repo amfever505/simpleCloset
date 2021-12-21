@@ -28,7 +28,7 @@ $('.burger-btn').on('click', function () {
   $('body').toggleClass('noscroll'); //bodyにnoscrollクラスを付与(スクロールを固定)
 });
 
-// selectCharacter function
+// selectShop function
 let h = $('.shop-info').outerHeight(true);
 console.log(h);
 $('.shop-info-li').css('padding-top', h + 'px');

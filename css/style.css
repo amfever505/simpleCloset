@@ -199,6 +199,7 @@ section row .rowbox1-1_r {
 }
 body {
   width: 100%;
+  overflow-x: hidden;
 }
 
 span {
