@@ -4,116 +4,269 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HOME ｜ CHONG YUEーーロードバイク専門店</title>
+    <title>HOME ｜ simple Closet ファッションレンタルサイト</title>
 
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/slick-theme.css" />
     <link rel="stylesheet" href="css/animate.css" />
-    <link rel="stylesheet" href="dist/tailwind.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/plugin.css" />
-    <!-- slick.js style -->
 
+    <!-- slick.js style -->
+    <!-- jquery -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="./js/top.js"></script>
 
     <!-- 実行コード -->
-    <script></script>
+    <!-- <script></script> -->
   </head>
-  <body class="bg-gray-700 text-white w-full">
+  <body>
     <header>
-      <a href="index.html" class="z-50 mx-auto text-center md:mx-0">
-        <img
-          class="w-5/6 sm:w-full md:block"
-          src="img/common/logo_header_web.png"
-          alt="CHONG YUEロードバイク専門店"
-          class="header_logo"
-        />
-      </a>
-      <div id="nav-menu" class="nav-wrapper">
-        <nav id="gnav" class="bg-black h-full md:h-auto">
+      <div class="wrapper">
+        <a href="index.html" class="header_logo">
+          <img
+            class="w-5/6 sm:w-full md:block"
+            src="image/common/logotitle.png"
+            alt="simple Closet ファッションレンタルサイト"
+          />
+        </a>
+        <nav id="gnav" class="">
           <ul class="menu">
             <li>
-              <a href="pickup.html">
-                <p class="nav-i-ttl">Pick Up</p>
-                <span class="nav-i-sbttl">おすすめ</span>
+              <a href="#about">
+                <span class="nav-i-ttl">About</span>
               </a>
             </li>
             <li>
-              <a href="gallery.html">
-                <p class="nav-i-ttl">Gallery</p>
-                <span class="nav-i-sbttl">ギャラリー</span>
+              <a href="coordinate.html">
+                <span class="nav-i-ttl">Coordinate</span>
               </a>
             </li>
             <li>
-              <a href="event.html"
-                ><p class="nav-i-ttl">Event</p>
-                <span class="nav-i-sbttl">イベント</span></a
-              >
+              <a href="#"><span class="nav-i-ttl">News</span> </a>
             </li>
             <li>
-              <a href="access.html"
-                ><p class="nav-i-ttl">Access</p>
-                <span class="nav-i-sbttl">アクセス</span></a
-              >
+              <a href="#faq"><span class="nav-i-ttl">FAQ</span> </a>
+            </li>
+            <li>
+              <a href="#"><span class="nav-i-ttl">Login</span> </a>
             </li>
           </ul>
         </nav>
       </div>
+
       <div class="burger-btn">
         <!-- ③ハンバーガーボタン -->
-        <span class="bars">
-          <span class="bar bar_top"></span>
-          <span class="bar bar_mid"></span>
-          <span class="bar bar_bottom"></span>
-        </span>
+        <!-- <div class="bars"> -->
+        <span class="bar bar_top"></span>
+        <span class="bar bar_mid"></span>
+        <span class="bar bar_bottom"></span>
+        <!-- </div> -->
       </div>
     </header>
-    <!-- <button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="">Previous</button> -->
-    <div id="mv" class="mv-box mb-13 lg:mb-20 mt-25">
-      <div class="mv-item"></div>
-      <div class="mv-item"></div>
-      <div class="mv-item"></div>
-      <div class="mv-item"></div>
-    </div>
-    <!-- <button class="slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button> -->
 
-    <main id="home" class="px-8">
-      <section>
-        <row class="flex items-center flex-col md:flex-row">
-          <div class="rowbox1-1_l wow slideInLeft">
-            <h1 class="text-left">MESSAGE</h1>
-            <h2 class="text-left">ChongYueは台湾のロードバイク専門店です。</h2>
-            <p class="txt">
-              2009から、台湾桃園で中壢本店を設立し、カスタマイズ含め自転車全般的なサービスを提供しております。<br />
-              現在台北から台湾中部の台中まで５つ店舗展開し、新品、中古、アクセサリーなど国内海外のブランドを多数扱っております。
-            </p>
+    <div id="mv" class="">
+      <div class="mv-item">
+        <img src="./image/common/logo_square.png" alt="" />
+        <div>
+          <p>20～30代女性・男性ともに<br />最も使われる<br />ファッションレンタルサイト</p>
+          <a href="#start">今すぐ試す</a>
+        </div>
+      </div>
+    </div>
+
+    <main id="home" class="">
+      <section id="about">
+        <div class="wrapper">
+          <div class="info row">
+            <div class="left">
+              <h2>月額定額で好きなコーデが届く</h2>
+              <p>
+                月額定額なので気軽にレンタル。コーデごとレンタルするため、忙しいあなたにおすすめ。返却すると新たなコーデが借りられます。<br />
+                <br />
+                何より、クローゼットが着なくなった服で埋め尽くされること、整理整頓の手間もなくなり、楽になります。
+              </p>
+              <img src="./image/main/about-1.png" alt="" />
+            </div>
+            <img class="right" src="./image/main/about-2.png" alt="" />
           </div>
-          <div class="rowbox1-1_l wow fadeInUp" data-wow-delay="2s">
-            <div class="img--3_4" style="background-image: url('img/home/home_1.jpeg')"></div>
+        </div>
+        <div class="look row">
+          <h2>
+            豊富なスタイルで<br />
+            様々なシーンに対応
+          </h2>
+          <div class="look_slide">
+            <img src="./image/main/look-1.png" alt="" />
+            <p style="transform: translate(-4rem, -3rem)">#Business Style</p>
+
+            <p>#Business Style</p>
+
+            <img src="./image/main/look-2.png" alt="" />
+            <img src="./image/main/look-3.png" alt="" />
+            <p>#Business Style</p>
           </div>
-        </row>
-        <row class="flex items-center flex-col md:flex-row-reverse">
-          <div class="rowbox1-1_r wow slideInRight" data-wow-delay="1s">
-            <h2 class="text-left">レース・イベントも毎月開催中</h2>
-            <p>
-              台湾自転車協会と連携し、毎月レースなどのイベントも沢山開催しております。<br />
-              また、「環島」という台湾一周サイクリングも自転車レンタルサービスを提供し、皆様を応援しております。
-              みんなと一緒にレースを楽しみましょう！
-            </p>
+        </div>
+        <div class="wrapper">
+          <div class="guide row">
+            <h2>simpleClosetの使い方</h2>
+            <div class="guide_list">
+              <div class="one">
+                <div class="guide_list_icon">1</div>
+                <div class="guide_list_txt">
+                  <h3>選ぶ</h3>
+                  <p>
+                    お好きなコーデを<br />
+                    カートに入れよう
+                  </p>
+                </div>
+              </div>
+              <div class="two">
+                <div class="guide_list_icon">2</div>
+                <div class="guide_list_txt">
+                  <h3>登録</h3>
+                  <p>
+                    個人情報を登録する<br />
+                    *初回のみ
+                  </p>
+                </div>
+              </div>
+              <div class="three">
+                <div class="guide_list_icon">3</div>
+                <div class="guide_list_txt">
+                  <h3>返却</h3>
+                  <p>クリーニングは不要<br />そのまま返却</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="rowbox1-1_r wow fadeInUp" data-wow-delay="1s">
-            <div class="img--3_4" style="background-image: url('img/home/home_2.jpeg')"></div>
+        </div>
+        <div class="plan row">
+          <img src="./image/main/plan.png" alt="" />
+          <div class="plan_desc">
+            <h2>simpleClosetのプラン</h2>
+            <h3>月額￥6,000～（税込）</h3>
+            <ul class="plan_list">
+              <li>
+                <span>1set</span>
+                <span>¥6,000</span>
+              </li>
+              <li><span>2set</span> <span>¥11,000</span></li>
+              <li><span>3set</span> <span>¥15,000</span></li>
+            </ul>
+            <p>※別途返却手数料:540円/1回(税込)</p>
           </div>
-        </row>
+        </div>
+      </section>
+      <!-- faq -->
+      <section id="faq">
+        <div class="wrapper">
+          <div class="row">
+            <h2>よくある質問</h2>
+            <ul class="faq-list">
+              <li>
+                <div class="faq_q">
+                  Q. 返却の仕方について
+                  <span class="faq-switch faq-off"></span>
+                  <span class="faq-switch"></span>
+                </div>
+                <div class="faq_a">
+                  毎週月曜日AM3時～5時にてヤマト運輸では定期メンテナンスを実施しており、当該時間は返却手続きが行えません。予めご了承ください。
+                  返却の申し込みは一度に複数点行うことが可能です。操作後に返却アイテムを追加したい場合は、キャンセルして申し込みをし直してください。
+                </div>
+              </li>
+              <li>
+                <div class="faq_q">
+                  Q. 借りたアイテムを汚したら？
+                  <span class="faq-switch faq-off"></span>
+                  <span class="faq-switch"></span>
+                </div>
+                <div class="faq_a">
+                  返却されたアイテムは、ユーズドサイトで中古販売いたします。<br />
+                  <br />
+                  通常利用による染みや汚れ、付着した匂いについては、クリーニング・洗濯等のうえ返却いただけますが、次に利用されるお客様に気持ちよくご利用いただけるよう、品質表示に従い丁寧にお取り扱いいただきますようお願いいたします。
+                </div>
+              </li>
+              <li>
+                <div class="faq_q">
+                  Q. レンタルできるアイテム数について
+                  <span class="faq-switch faq-off"></span>
+                  <span class="faq-switch"></span>
+                </div>
+                <div class="faq_a">レンタルできるアイテム数に制限はありません。</div>
+              </li>
+              <li>
+                <div class="faq_q">
+                  Q. 配送状況を確認したい
+                  <span class="faq-switch faq-off"></span>
+                  <span class="faq-switch"></span>
+                </div>
+                <div class="faq_a">
+                  出荷完了後、プッシュ通知およびご登録のメールアドレス宛に出荷完了のご連絡をいたします。
+                  ヤマト運輸ホームページにて、プッシュ通知及びメールに記載のお問い合わせNo.を入力の上、配送状況をご確認ください。
+                </div>
+              </li>
+
+              <button id="faq-more">more</button>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- start -->
+      <section id="start">
+        <div class="start-switch row">
+          <div class="start-men">
+            <p>MEN</p>
+          </div>
+          <div class="start-women">
+            <p>WOMEN</p>
+          </div>
+        </div>
+        <!-- men's look -->
+
+        <!-- women's look -->
+        <div class="wrapper">
+          <div class="women-look row">
+            <div class="look_item" style="background-image: url(./image/01-01.jpg)"></div>
+            <div class="look_item" style="background-image: url(./image/02-01.jpg)"></div>
+            <div class="look_item" style="background-image: url(./image/04-01.jpg)"></div>
+            <div class="look_item" style="background-image: url(./image/05-01.jpg)"></div>
+            <div class="look_item" style="background-image: url(./image/06-01.jpg)"></div>
+            <div class="look_item" style="background-image: url(./image/07-01.jpg)"></div>
+            <div class="look_item" style="background-image: url(./image/09-01.jpg)"></div>
+            <div class="look_item" style="background-image: url(./image/10-01.jpg)"></div>
+            <div class="look_item" style="background-image: url(./image/12-01.jpg)"></div>
+            <div class="look_item" style="background-image: url(./image/13-01.jpg)"></div>
+            <div class="look_item" style="background-image: url(./image/16-01.jpg)"></div>
+            <div class="look_item" style="background-image: url(./image/17-01.jpg)"></div>
+            <div class="look_item" style="background-image: url(./image/18-01.jpg)"></div>
+            <div class="look_item" style="background-image: url(./image/19-01.jpg)"></div>
+            <div class="look_item"></div>
+            <div class="look_item"></div>
+          </div>
+
+          <div class="men-look row">
+            <div class="look_item" style="background-image: url(./image/03-01.jpg)"></div>
+            <div class="look_item" style="background-image: url(./image/08-01.jpg)"></div>
+            <div class="look_item" style="background-image: url(./image/11-01.jpg)"></div>
+            <div class="look_item" style="background-image: url(./image/14-01.jpg)"></div>
+            <div class="look_item" style="background-image: url(./image/15-01.jpg)"></div>
+            <div class="look_item"></div>
+            <div class="look_item"></div>
+            <div class="look_item"></div>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer class="bg-black text-center h-40 mt-6">
-      <p class="copy">Copyright © 2021 ChongYue Cycling All Rights Reserved.</p>
+    <footer class="">
+      <p class="copy">© 2022 simpleCloset</p>
     </footer>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="js/slick.js"></script>
     <script type="text/javascript" src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/top.js"></script>
   </body>
 </html>
