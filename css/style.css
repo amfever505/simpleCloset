@@ -350,7 +350,16 @@ footer p {
   background-size: cover;
   margin-bottom: 4rem;
 }
-
+#start button {
+  width: 16%;
+  padding: 0.5rem 1rem;
+  margin: auto;
+  background: #d0856d;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
 @media screen and (max-width: 1366px) {
   html {
     font-size: 15px;
