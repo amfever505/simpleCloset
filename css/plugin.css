@@ -37,7 +37,7 @@ header.header-wt {
 #start .start-women.show {
   opacity: 1;
 }
-#start .women-look.show,
-#start .men-look.show {
+#look .women-look.show,
+#look .men-look.show {
   display: flex;
 }

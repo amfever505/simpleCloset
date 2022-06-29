@@ -1,0 +1,166 @@
+h1 {
+  margin-top: 10rem;
+  text-align: center;
+}
+h2 {
+  font-size: 1.75rem;
+}
+h4 {
+  font-size: 1.5rem;
+  margin: 1.5rem 0 2.5rem 0;
+}
+p {
+  margin-bottom: 2.5rem;
+}
+table,
+th,
+td {
+  border-collapse: collapse;
+  padding: 1rem;
+  border: 1px solid #777;
+  text-align: center;
+}
+table {
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 3rem;
+}
+thead {
+  background-color: #eee;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+}
+* {
+  background-size: cover;
+  background-position: center;
+}
+#detail .wrapper {
+  display: flex;
+  margin: auto;
+  height: 100vh;
+  padding: 8rem 0;
+}
+.breadcrumb-list {
+  color: #919191;
+}
+.detail__slide,
+.detail__info {
+  width: 50%;
+}
+.detail__slide {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.detail__info {
+  margin: 1rem 0 1rem 2rem;
+  overflow: auto;
+}
+
+.kart {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  bottom: 122px;
+  right: 62px;
+}
+
+.kart_button {
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #a7b8c9;
+  transition: 0.3s all linear;
+}
+.kart_button:hover {
+  opacity: 0.8;
+}
+
+.kart_img {
+  width: 60px;
+  height: 60px;
+}
+/* slide */
+.slide__thumbnail {
+  width: 75%;
+  aspect-ratio: 3/4;
+  transition: 0.4s background linear;
+}
+.slide__nav {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+.slide__nav .item {
+  width: 100%;
+  aspect-ratio: 1/1;
+  margin: 2rem 1rem 0 0;
+  cursor: pointer;
+  transition: 0.4s all ease-in-out;
+}
+.slide__nav .item:hover {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 1366px) {
+}
+@media screen and (max-width: 1194px) {
+  .slide__thumbnail {
+    width: 85%;
+  }
+  .detail__slide {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .slide__nav {
+    width: 95%;
+    flex-direction: row;
+  }
+  .slide__nav .item {
+    margin: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .slide__thumbnail {
+    width: 90%;
+  }
+}
+/* スマホ */
+@media screen and (max-width: 834px) {
+  #detail .wrapper {
+    flex-direction: column;
+    height: initial;
+  }
+
+  .detail__slide {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+  .detail__slide,
+  .detail__info {
+    width: 100%;
+  }
+
+  .detail__slide img {
+    height: 470px;
+  }
+
+  .detail__info {
+    margin: 0;
+    padding: 0 1.5rem 7.5rem;
+    overflow: unset;
+  }
+
+  .kart {
+    bottom: 130px;
+    right: 1.5rem;
+  }
+}
